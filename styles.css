@@ -1,0 +1,278 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #969090;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #331570;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #4CAF50;
+}
+
+.navbar .cta-button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.navbar .cta-button:hover {
+    background: #45a049;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.banner .left {
+    flex: 1;
+}
+
+.banner .left h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #75e6d3;
+}
+
+.banner .left p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.banner .left button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner .right img {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+/* Clients Section */
+.clients {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.clients h2 {
+    margin-bottom: 30px;
+}
+
+.clients .logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.clients .logos img {
+    width: 100px;
+    height: auto;
+}
+
+/* Blockchain Sections */
+.blockchain-power, .helping-blockchain, .blockchain-future {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.blockchain-power h2, .helping-blockchain h2, .blockchain-future h2 {
+    margin-bottom: 30px;
+}
+
+.blockchain-power .points, .helping-blockchain .cards, .blockchain-future .future-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blockchain-power .point, .helping-blockchain .card, .blockchain-future .future-card {
+    flex: 1 1 30%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blockchain-power .point img, .helping-blockchain .card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.blockchain-future .future-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.blockchain-future .future-card img {
+    width: 100%;
+    height: auto;
+}
+
+.blockchain-future .future-card .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.blockchain-future .future-card:hover .overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Contact Us */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.contact .image {
+    flex: 1;
+}
+
+.contact .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact .form {
+    flex: 1;
+}
+
+.contact .form input,
+.contact .form textarea,
+.contact .form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact .form button {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .social-icons {
+    margin: 10px 0;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer .footer-links a {
+    margin: 0 10px;
+    color: #4CAF50;
+    transition: color 0.3s;
+}
+
+.footer .footer-links a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner .right img {
+        margin-bottom: 20px;
+    }
+
+    .clients .logos img {
+        width: 80px;
+    }
+
+    .blockchain-power .point,
+    .helping-blockchain .card,
+    .blockchain-future .future-card {
+        flex: 1 1 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+}
+
